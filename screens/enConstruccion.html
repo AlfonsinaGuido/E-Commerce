@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ES">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" type='text/css' content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap">
-  <link rel="icon" href="../assets/logo.png" type="png" sizes="16px">
-  <link rel="stylesheet" href="../styles/style.css" />
-  <link rel="stylesheet" href="../styles/add-products.css" />
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <title>E-commerce</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      type="text/css"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+    />
+    <link rel="icon" href="../assets/logo.png" type="png" sizes="16px">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>E-commerce</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo-busca">
+        <div class="logo-busqueda">
           <div class="logo">
             <a href="index.html"><img src="../assets/logo.png" alt="logo" /></a>
             <p class="logo-azul">Tu</p>
@@ -26,59 +31,21 @@
         </div>
       </nav>
     </header>
-    <!-- <marquee>Página en construcción</marquee> -->
-    <main>
-      <section class="product-add">
-        <div class="product-add_title">Agregar nuevo producto</div>
-        <form class="form-cadastro" data-form>
-          <input
-            class="product-add_input__url"
-            type="text"
-            placeholder="URL del producto"
-            required
-            data-url
-          />
-          <input
-            class="product-add_input__name"
-            type="text"
-            placeholder="Nombre del producto"
-            required
-            data-nome
-          />
-          <input
-            class="product-add_input__price"
-            type="text"
-            placeholder="Precio del producto"
-            required
-            data-preco
-          />
-          <textarea
-            class="product-add_textarea__description"
-            type="text"
-            placeholder="Descripción del producto"
-            required
-            data-description
-          ></textarea>
-          <button type="submit" class="product-add_btn">
-            Agregar producto
-          </button>
-        </form>
-      </section>
-    </main>
+    <marquee>Página en construcción</marquee>
   </body>
   <section class="contato">
     <div class="referencia">
-      <img src="../assets/logo.png" alt="logo" />
+      <img id="logo" src="../assets/logo.png" alt="logo" />
       <p>Tu</p>
       <p>Empresa</p>
     </div>
     <div class="links-uteis">
-      <a href="enConstruccion.html">Quienes somos</a>
-      <a href="enConstruccion.html">Política de Privacidad</a>
-      <a href="enConstruccion.html">Programa de fidelidad</a>
-      <a href="enConstruccion.html">Nuestras Tiendas</a>
-      <a href="enConstruccion.html">Quiero ser franquiciado</a>
-      <a href="enConstruccion.html">Anuncie aquí</a>
+      <a href="">Quienes somos</a>
+      <a href="">Política de Privacidad</a>
+      <a href="">Programa de fidelidad</a>
+      <a href="">Nuestras Tiendas</a>
+      <a href="">Quiero ser franquiciado</a>
+      <a href="">Anuncie aquí</a>
     </div>
 
     <div class="form">
@@ -141,7 +108,7 @@
         </a>
     </div>
   </section>
-  <script type="module" src="../controllers/crea-productos-controller.js"></script>
+  <script type="module" src="../controllers/actualiza-producto-controller.js"></script>
   <script src="../sweetAlert.js"></script>
   <script src="../app.js" type="module"></script>
 </body>

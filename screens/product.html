@@ -22,11 +22,11 @@
             <p class="logo-azul">Tu</p>
             <p>Empresa</p>
           </div>
-          <input i type="text" placeholder="¿Qué deseas buscar?" />
+          <input i type="text" placeholder="¿Qué deseas buscar? (inactivo)" />
         </div>
       </nav>
     </header>
-    <marquee>Página en construcción</marquee>
+    <!-- <marquee>Página en construcción</marquee> -->
     <section class="geral-products">
       <div class="products_title">
         <span>Todos los productos</span> 
@@ -45,54 +45,67 @@
         <p>Empresa</p>
       </div>
       <div class="links-uteis">
-        <a href="">Quienes somos</a>
-        <a href="">Política de Privacidad</a>
-        <a href="">Programa de fidelidad</a>
-        <a href="">Nuestras Tiendas</a>
-        <a href="">Quiero ser franquiciado</a>
-        <a href="">Anuncie aquí</a>
+        <a href="enConstruccion.html">Quienes somos</a>
+        <a href="enConstruccion.html">Política de Privacidad</a>
+        <a href="enConstruccion.html">Programa de fidelidad</a>
+        <a href="enConstruccion.html">Nuestras Tiendas</a>
+        <a href="enConstruccion.html">Quiero ser franquiciado</a>
+        <a href="enConstruccion.html">Anuncie aquí</a>
       </div>
 
       <div class="form">
         <p>Hable con nosotros</p>
         <form class="formcontacto__form" name="form" action="https://formsubmit.co/yesicaguidounla@hotmail.com"
         method="POST" onsubmit="showAlert()">
-          <div class="label-float">
+          <div class="input-container">
             <label for="Nome" class="label-nome">Nombre</label>
             <input
-              type="text"
-              name="Nome"
-              id="Nome"
-              class="input-nome"
-              placeholder=""
-              required
-            />
-            <label for="Nome" class="label-nome">E-mail</label>
-            <input
-              type="email"
-              name="Email"
-              id="Nome"
-              class="input-nome"
-              placeholder="ejemplo@dominio.com"
-              required
-            />
+                type="text"
+                name="Nome"
+                id="Nome"
+                class="input-nome"
+                placeholder=""
+                required
+                data-tipo="nombre"
+              />
+              <span class="input-message-error">Este campo no es válido</span>
           </div>
-          <label for="Nome" class="label-nome">Mensaje</label>
-          <textarea
-            name="mensagem"
-            id="msg"
-            cols="5"
-            rows="5"
-            placeholder="Escriba su mensaje"
-            required
-          ></textarea>
-          <button type="submit" class="formcontacto__boton">Enviar Mensaje</button>
+          <div class="input-container">
+            <label for="Nome" class="label-nome">E-mail</label>
+              <input
+                type="email"
+                name="Email"
+                id="Nome"
+                class="input-nome"
+                placeholder="ejemplo@dominio.com"
+                required
+                data-tipo="email"
+              />
+              <span class="input-message-error">Este campo no es válido</span>
+          </div>
+          <div class="input-container">
+            <label for="Nome" class="label-nome">Mensaje</label>
+            <textarea
+              name="mensagem"
+              id="msg"
+              cols="5"
+              rows="5"
+              placeholder="Escriba su mensaje"
+              required
+              minlength="10" maxlength="550"
+              data-tipo="mensaje"
+            ></textarea>
+            <span class="input-message-error">Este campo no es válido</span>
+          </div>
+          <div class="btnForm">
+            <button type="submit" class="formcontacto__boton">Enviar Mensaje</button>
+          </div>
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="http://127.0.0.1:5501/screens/index.html" />
         </form>
       </div>
     </section>
-    <marquee>Página en construcción</marquee>
+    <!-- <marquee>Página en construcción</marquee> -->
     <!-- Sección de Footer -->
     <section class="footer">
       <div class="footer__rodapie">
@@ -103,5 +116,6 @@
     </section>
     <script type="module" src="../controllers/lista-productos.js"></script>
     <script src="../sweetAlert.js"></script>
+    <script src="../app.js" type="module"></script>
   </body>
   </html>
