@@ -30,23 +30,33 @@
     <main>
       <section class="login">
         <div class="login_title">Iniciar Sesión</div>
-        <form action="#" class="form-cadastro" data-form>
-          <input
-            class="login_input__url"
-            type="text"
-            placeholder="Escriba su email"
-            required
-            data-email
-          />
-          <input
-            class="login_input__name"
-            type="password"
-            placeholder="Escriba su clave"
-            required
-            data-password
-          />
-          <button type="submit" class="login_btn">Entrar</button>
-        </form>
+          <form action="#" data-form>
+            <div class="input-container">
+              <input
+              class="login_input__url"
+              type="email"
+              placeholder="Escriba su E-mail"
+              required
+              data-tipo="email"
+              data-email
+              />
+              <span class="input-message-error">Este campo no es válido</span>
+            </div>
+            <div class="input-container">
+              <input
+              class="login_input__name"
+              type="password"
+              placeholder="Escriba su clave"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$"
+              required
+              data-tipo="password"
+              data-password
+            />
+            <!-- en esta Exp Reg, (?=.*\d) verifica la existencia de un caracter numérico, (?=.*[a-z]) la de una letra minúscula y (?=.*[A-Z]) la de una letra en mayúscula. La longitud la verifico con los valores entre llaves {8,15}. -->
+            <span class="input-message-error">Este campo no es válido</span>
+            </div>
+            <button type="submit" class="login_btn">Entrar</button>
+          </form>
       </section>
     </main>
   </body>
@@ -88,7 +98,7 @@
               type="email"
               name="Email"
               id="Nome"
-              class="input-nome"
+              class="input-email"
               placeholder="ejemplo@dominio.com"
               required
               data-tipo="email"
