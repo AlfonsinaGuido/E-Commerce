@@ -334,6 +334,7 @@ nav {
 
 .input-message-error {
   display: none;
+  text-align: center;
 }
 
 .input-container--invalid {

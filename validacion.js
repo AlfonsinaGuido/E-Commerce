@@ -20,11 +20,15 @@ export function valida(input) {
     
     const mensajesDeError = {
       nombre: {
-        valueMissing: "El campo nombre no puede estar vacío",
+        valueMissing: "El campo nombre no puede estar vacío.",
       },
       email: {
-        valueMissing: "El campo correo no puede estar vacío",
-        typeMismatch: "El correo no es válido",
+        valueMissing: "El campo correo no puede estar vacío.",
+        typeMismatch: "El correo no es válido.",
+      },
+      password: {
+        valueMissing: "El campo clave no puede estar vacío.",
+        patternMismatch: "La clave debe contener mínimo 8 caracteres, máximo 15, al menos una letra mayúscula, una minúscula y un número.",
       },
       mensaje: {
         valueMissing: "Este campo no puede estar vacío",
