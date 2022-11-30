@@ -5,17 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "json-server --watch db.json"
+    "start": "concurrently \"json-server --port=8000 --watch db.json\" \"live-server --port=8080 --wait=100000 --open=index.html\""
   },
   "keywords": [],
   "author": "Alfonsina",
   "license": "ISC",
   "dependencies": {
-    "json": "^11.0.0",
-    "server": "^1.0.37"
+    "concurrently": "^7.5.0",
+    "json-server": "^0.17.1",
+    "live-server": "^1.2.2"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlfonsinaGuido/E-Commerce.git"
@@ -23,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/AlfonsinaGuido/E-Commerce/issues"
   },
-  "homepage": "https://github.com/AlfonsinaGuido/E-Commerce#readme"
+  "homepage": "https://github.com/AlfonsinaGuido/E-Commerce#readme",
+  "type": "module"
 }
