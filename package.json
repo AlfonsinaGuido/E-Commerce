@@ -1,7 +1,7 @@
 {
   "name": "live-coding-alurageek",
   "version": "1.0.0",
-  "description": "",
+  "description": "--- <p align=\"center\" >      <img width=\"800\" heigth=\"400\" src=\"https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png\"> </p>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,19 @@
     "server": "json-server --watch db.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alfonsina",
   "license": "ISC",
   "dependencies": {
     "json": "^11.0.0",
     "server": "^1.0.37"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfonsinaGuido/E-Commerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlfonsinaGuido/E-Commerce/issues"
+  },
+  "homepage": "https://github.com/AlfonsinaGuido/E-Commerce#readme"
 }
