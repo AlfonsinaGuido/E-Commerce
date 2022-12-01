@@ -1,10 +1,12 @@
+// const server = 'http://localhost:3000';
+
+const server = 'https://e-commerce-kvic.onrender.com';
+
 //GET
 const listaProductos = () =>
   fetch(server + '/producto')
     .then((resposta) => resposta.json())
     .catch((error) => console.log(error));
-
-const server = 'https://e-commerce-kvic.onrender.com';
 
 const listarUnProduto = (id) => {
   return fetch(server + `/producto/${id}`).then((resposta) => {
